@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <!-- Header Nav -->
+    <header>
+        <!-- First nav -->
+        <nav class="first-navbar navbar navbar-expand-lg navbar-light py-0">
+            <a class="navbar-brand" href="#">E-ARNEST</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="user-avatar rounded-circle mr-2" src="https://scontent-sin6-2.cdninstagram.com/vp/f6ef9601196ca225f087895f092c50d4/5B83593B/t51.2885-19/s150x150/21107528_112835676074940_8265904070003261440_a.jpg"
+                                alt="User Avatar"> Reza Pahlevi
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right my-0" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <a class="dropdown-item" href="#">Pengaturan</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End first nav -->
+        <!-- Second nav -->
+        <nav class="second-navbar navbar navbar-expand-lg navbar-light py-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="material-icons"></i>
+                            <span>Beranda</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons"></i>
+                            <span>Penyusunan Naskah</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons"></i>
+                            <span>Basis Pengetahuan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <span>Pencarian</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Second nav -->
+    </header>
+    <!-- Header Nav -->
+    <!-- Sidebar and Main -->
+    <div class="container-fluid side-and-main">
+        <div class="row">
+            <!-- Main -->
+            <main class="main-content col col-lg-12 col-md-12 col-sm-12 p-0">
+                <div class="main-content-container container-fluid px-4">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12 mb-4">
+                            <!-- page header -->
+                            <div class="page-header row no-gutters py-4">
+                                <div class="col-12 col-sm-4 text-center text-sm-left mb-4 mb-sm-0">
+                                    <!-- <span class="text-uppercase page-subtitle">Overview</span> -->
+                                    <h3 class="page-title">Beranda</h3>
+                                </div>
+                            </div>
+                            <!-- end page header -->
+                            <div class="card py-md-3">
+                                <div class="card-body">
+                                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#judul" role="tab" aria-controls="judul" aria-selected="true">Judul</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#pendahuluan" role="tab" aria-controls="pendahuluan" aria-selected="false">Pendahuluan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#batang-tubuh" role="tab" aria-controls="batang-tubuh" aria-selected="false">Batang Tubuh</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#penutup" role="tab" aria-controls="penutup" aria-selected="false">Penutup</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content py-1" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="judul" role="tabpanel" aria-labelledby="judul-tab">
+                                            <div class="form-group">
+                                                <label>Nama</label>
+                                                <input type="text" class="form-control" placeholder="Nama Peraturan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Nomor</label>
+                                                <input type="text" class="form-control" placeholder="000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tahun</label>
+                                                <input type="text" class="form-control" placeholder="2018">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Jenis</label>
+                                                <select class="form-control">
+                                                    <option>Undang-undang</option>
+                                                    <option>Peraturan Kepala</option>
+                                                    <option>Surat Keputusan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pendahuluan" role="tabpanel" aria-labelledby="pendahuluan-tab">
+                                            <div class="form-group">
+                                                <label>Jabatan</label>
+                                                <input type="text" class="form-control" placeholder="Jabatan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Menimbang</label>
+                                                <input type="text" class="form-control" placeholder="000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Mengingat</label>
+                                                <input type="text" class="form-control" placeholder="2018">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Menetapkan</label>
+                                                <input type="text" class="form-control" placeholder="Menetapkan">
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="batang-tubuh" role="tabpanel" aria-labelledby="batang-tubuh-tab">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, accusantium ducimus odit omnis eum odio, quasi nostrum
+                                            nobis dignissimos nulla quidem hic nam perferendis doloribus neque mollitia voluptatem
+                                            fugit dicta!
+                                        </div>
+                                        <div class="tab-pane fade" id="penutup" role="tabpanel" aria-labelledby="penutup-tab">
+                                            <div class="form-group">
+                                                <label>Jabatan</label>
+                                                <input type="text" class="form-control" placeholder="Jabatan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Menimbang</label>
+                                                <input type="text" class="form-control" placeholder="000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Mengingat</label>
+                                                <input type="text" class="form-control" placeholder="2018">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Menetapkan</label>
+                                                <input type="text" class="form-control" placeholder="Menetapkan">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main -->
+        </div>
+    </div>
+    <!-- End Sidebar and Main -->
+
+    <!-- Script -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="/js/tether.min.js"></script> -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTab a').on('click', function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+    </script>
+</body>
+
+</html>

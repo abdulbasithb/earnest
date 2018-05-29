@@ -1,0 +1,21 @@
+{
+  "name": "earnest",
+  "version": "1.0.0",
+  "description": "project bapeten",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "abdulbasithb",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

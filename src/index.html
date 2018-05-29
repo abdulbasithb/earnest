@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-ARNEST | Beranda</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- First Navbar -->
+    <nav class="first-nav navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">E-ARNEST</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar" src="https://scontent-sin6-2.cdninstagram.com/vp/f6ef9601196ca225f087895f092c50d4/5B83593B/t51.2885-19/s150x150/21107528_112835676074940_8265904070003261440_a.jpg"
+                                alt=""> Reza Pahlevi
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Pengaturan</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Keluar</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End First Navbar -->
+
+    <!-- Second Navbar -->
+    <nav class="second-nav navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="material-icons">
+                                home
+                            </i>
+                            Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">
+                                import_contacts
+                            </i>
+                            Penyusunan Naskah
+                        </a>
+                    </li>
+                    <li>
+                        <a href="penyusunan-peraturan.html">
+                            <i class="material-icons">
+                                assignment
+                            </i>
+                            Penyusunan Peraturan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="basis-pengetahuan.html">
+                            <i class="material-icons">
+                                folder_open
+                            </i>
+                            Basis Pengetahuan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pencarian.html">
+                            <i class="material-icons">
+                                search
+                            </i>
+                            Pencarian
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Second Navbar -->
+
+    <!-- Main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Page Header -->
+                    <div class="page-header">
+                        <h3>
+                            Beranda
+                        </h3>
+                    </div>
+                    <!-- End Page Header -->
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <h3>Selamat Datang Reza Pahlevi</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, assumenda?</p>
+                            <br>
+                            <button type="button" class="btn btn-blue">Buat Peraturan Baru</button>
+                            <br>
+                            <br>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <p class="text-muted">© 2018.
+                <a href="#">E-ARNEST</a> by
+                <a href="#" target="_blank">Developers</a>
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Script -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="/js/tether.min.js"></script> -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+</body>
+
+</html>
