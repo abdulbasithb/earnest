@@ -5,6 +5,7 @@ nav.navbar {
   border-radius: 0; }
 
 nav.first-nav {
+  height: 50px;
   margin-bottom: 0;
   background-color: #03A9F4;
   color: #ffffff !important; }
@@ -33,6 +34,7 @@ nav.first-nav {
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.11), 0 3px 10px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.06); }
 
 nav.second-nav {
+  height: 50px;
   background-color: white;
   margin-bottom: 0;
   box-shadow: 0 0.125rem 0.625rem rgba(90, 97, 105, 0.12); }
@@ -64,7 +66,6 @@ nav.second-nav {
     padding-left: 0; }
 
 footer.footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -150,6 +151,9 @@ footer.footer {
   -webkit-box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1); }
 
+.panel-footer {
+  background-color: white !important; }
+
 .btn-blue {
   background-color: #03A9F4;
   color: #ffffff; }
@@ -198,3 +202,12 @@ footer.footer {
     text-align: center; }
     .nav-tabs a i.material-icons {
       font-size: 14px; }
+
+.btn-circle-floating {
+  border-radius: 100%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border: none; }

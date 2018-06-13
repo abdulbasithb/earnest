@@ -110,6 +110,7 @@
     </nav>
     <!-- End Second Navbar -->
 
+
     <!-- Main -->
     <main>
         <div class="container-fluid">
@@ -430,9 +431,15 @@
                                                                                                             <div class="form-group">
                                                                                                                 <label>Tipe</label>
                                                                                                                 <select class="form-control">
-                                                                                                                    <option>Rincian I</option>
-                                                                                                                    <option>Rincian II</option>
-                                                                                                                    <option>Rincian III</option>
+                                                                                                                    <option>Rincian
+                                                                                                                        I
+                                                                                                                    </option>
+                                                                                                                    <option>Rincian
+                                                                                                                        II
+                                                                                                                    </option>
+                                                                                                                    <option>Rincian
+                                                                                                                        III
+                                                                                                                    </option>
                                                                                                                     <option>Huruf</option>
                                                                                                                 </select>
                                                                                                             </div>
@@ -443,12 +450,14 @@
                                                                                                                     <li role="presentation" class="active">
                                                                                                                         <a href="#rincian-i-1" aria-controls="rincian-i-1" role="tab" data-toggle="tab">Rincian
                                                                                                                             I
-                                                                                                                            1</a>
+                                                                                                                            1
+                                                                                                                        </a>
                                                                                                                     </li>
                                                                                                                     <li role="presentation">
                                                                                                                         <a href="#rincian-i-2" aria-controls="rincian-i-2" role="tab" data-toggle="tab">Rincian
                                                                                                                             I
-                                                                                                                            2</a>
+                                                                                                                            2
+                                                                                                                        </a>
                                                                                                                     </li>
                                                                                                                     <li role="presentation">
                                                                                                                         <a href="#tambah" aria-controls="tambah" role="tab" data-toggle="tab" aria-expanded="true">
@@ -593,6 +602,11 @@
                             </div>
                             <!-- End Isi Tab Rancangan Peraturan -->
                         </div>
+                        <div class="panel-footer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem deserunt doloremque iste dolores accusamus.
+                            Iusto libero tenetur qui eveniet vel, repudiandae totam officiis voluptatem ad eos harum eaque
+                            aspernatur?
+                        </div>
                     </div>
                 </div>
             </div>
@@ -600,6 +614,47 @@
     </main>
     <!-- Main -->
 
+    <!-- ModalTrigger -->
+    <button type="button" class="btn btn-info btn-circle-floating" data-toggle="modal" data-target="#myModal" data-backdrop="false">
+        <i class="material-icons">
+            search
+        </i>
+    </button>
+    <!-- End Modal Trigger -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Pencarian</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Cari undang - undang">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-blue" type="submit">
+                                            <span>Cari</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- Code Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
