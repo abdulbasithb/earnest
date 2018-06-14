@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <style>
+        .btn-close {
+            position: relative;
+            float: right;
+            top: -20px;
+            color: black;
+        }
+
+        .btn-close:hover {
+            color: black;
+        }
+
         hr {
             margin-top: 0;
         }
@@ -1823,13 +1834,17 @@
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
                             </h4>
+                            <a href="#" id="hapus-komentar" class="btn-close">
+                                <i class="material-icons">
+                                    cancel
+                                </i>
+                            </a>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-xs-2">
                                         <img class="avatar" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
-
                                     </div>
                                     <div class="col-xs-10">
                                         <p>
@@ -1840,8 +1855,6 @@
                                             molestiae quia repudiandae reiciendis quas libero amet vitae! Non repellat similique
                                             ullam culpa sit voluptatibus numquam ea. Vero?</p>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-xs-2">
                                         <img class="avatar" src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
                                     </div>
@@ -1864,6 +1877,7 @@
                                                 <textarea class="form-control" rows="1"></textarea>
                                             </div>
                                             <button type="button" class="btn btn-info">Simpan</button>
+                                            <button type="button" class="btn btn-default">Batal</button>
                                         </form>
                                     </div>
                                 </div>
@@ -1889,7 +1903,7 @@
                     <h4 class="modal-title" id="myModalLabel">Komentar</h4>
                 </div>
                 <div class="modal-body">
-                    <form id="komentar-form"  class="form-horizontal">
+                    <form id="komentar-form" class="form-horizontal">
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <label>Judul Komentar</label>
@@ -1904,8 +1918,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                             <button id="batal-komentar" type="button" class="btn btn-default">Batal</button>
-                             <button id="tambah-komentar" type="button" class="btn btn-info">Tambah Komentar</button>
+                                <button id="batal-komentar" type="button" class="btn btn-default">Batal</button>
+                                <button id="tambah-komentar" type="button" class="btn btn-info">Tambah Komentar</button>
                             </div>
                         </div>
                     </form>
@@ -1976,6 +1990,11 @@
                     "<a data-toggle='collapse' href='#collapse" + (i - 1) + "'>" + $("#judul-komentar").val() +
                     "</a>" +
                     "</h4>" +
+                    "<a href='#' id='hapus-komentar' class='btn-close'>" +
+                    "<i class='material-icons'>" +
+                    "cancel" +
+                    "</i>" +
+                    "</a>" +
                     "</div>" +
                     "<div id='collapse" + (i - 1) + "' class='panel-collapse collapse'>" +
                     "<div class='panel-body'>" +
@@ -2053,7 +2072,15 @@
 
             $(document).on("click", "#tanggapi-komentar", function () {
                 var collapseID = $(this).parents().eq(4).attr('id');
+                console.log(collapseID);
                 templateTanggapi(collapseID);
+            });
+
+            $(document).on("click", "#hapus-komentar", function () {
+                var panelKomentarID = $(this).parents().eq(2).attr('id');
+                var nomorHighlight = panelKomentarID.substr(15);
+                $("*").removeClass('highlight-' + nomorHighlight);
+                $("#" + panelKomentarID ).remove();
             });
         });
     </script>
