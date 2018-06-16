@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <style>
         .btn-close {
-            position: relative;
-            float: right;
-            top: -20px;
+            position: absolute;
+            right: 0;
+            top: 7px;
+            padding-right: 15px;
+            color: black;
+        }
+
+        .btn-delete-tanggapan {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-right: 15px;
             color: black;
         }
 
@@ -2031,6 +2040,7 @@
 
             function templateTanggapi(collapseID) {
                 $("#" + collapseID + " .panel-body .row:first-child").append(
+                    "<div>" +
                     "<div class='col-xs-2'>" +
                     "<img class='avatar' src='https://www.w3schools.com/howto/img_avatar2.png' alt=''>" +
                     "</div>" +
@@ -2040,7 +2050,13 @@
                     "</p>" +
                     "<p>12:33 Today</p>" +
                     "<p>" + $("#isi-tanggapan").val() + "</p>" +
-                    "</div>"
+                    "<a href='#' id='hapus-tanggapan' class='btn-delete-tanggapan'>" +
+                    "<i class='material-icons'>" +
+                    "cancel" +
+                    "</i>" +
+                    "</a>" +
+                    "</div>" +
+                    "</div"
                 )
             }
 
@@ -2063,7 +2079,7 @@
             }
 
             function resetFormTanggapan() {
-                $("#form-tanggapan")[0].reset();
+                $("#form-tanggapan").trigger("reset");
             }
 
             $(document).on("click", "#batal-tanggapi", function () {
@@ -2072,7 +2088,6 @@
 
             $(document).on("click", "#tanggapi-komentar", function () {
                 var collapseID = $(this).parents().eq(4).attr('id');
-                console.log(collapseID);
                 templateTanggapi(collapseID);
             });
 
@@ -2080,7 +2095,12 @@
                 var panelKomentarID = $(this).parents().eq(2).attr('id');
                 var nomorHighlight = panelKomentarID.substr(15);
                 $("*").removeClass('highlight-' + nomorHighlight);
-                $("#" + panelKomentarID ).remove();
+                $("#" + panelKomentarID).remove();
+            });
+
+            $(document).on("click", "#hapus-tanggapan", function (e) {
+                $(this).parents().eq(1).remove();
+                e.preventDefault();
             });
         });
     </script>
