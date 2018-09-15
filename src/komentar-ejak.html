@@ -1907,14 +1907,14 @@
                             <div id='collapse-komentar-pertimbangan-1' class='panel-collapse collapse'>
                                 <!-- Teks asli (pertimbangan 1) yang dikomentari -->
                                 <div class='col-xs-12'>
-                                    <blockquote>
+                                    <!-- <blockquote>
                                         <span>
                                             <justify>
                                                 <b>Teks Asli : </b>bahwa penyesuaian besarnya Penghasilan Tidak Kena Pajak terhitung
                                                 mulai tanggal 1 Januari 2016 telah ditetapkan dalam Peraturan Menteri Keuangan
                                                 Nomor 101/PMK.010/2016 tentang Penyesuaian Besarnya Penghasilan Tidak Kena Pajak;</justify>
                                         </span>
-                                    </blockquote>
+                                    </blockquote> -->
                                     <br>
                                 </div>
                                 <div id="accordion" role="tablist">
@@ -2276,3 +2276,66 @@
 </body>
 
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span {
+ color: red;
+ margin-left: 20px;
+}
+</style>
+</head>
+<body>
+
+<p>Looping through arrays inside arrays.</p>
+
+<p id="demo"></p>
+
+<script>
+
+var myObj, i, j, k, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars": [
+        { 
+        	"judul":"Ford", 
+        	"komentar":[ 
+        		{ 
+                	"isi" : "heheeh",
+                    "tanggapan": ["hehe", "hoho"] 
+            	}
+        	] 
+        },
+        { 
+        	"judul":"Nissan", 
+        	"komentar":[ 
+        		{ 
+                	"isi" : "heheeh",
+                    "tanggapan": ["hehe", "hoho"] 
+            	}
+        	] 
+        },
+    ]
+}
+
+for (i in myObj.cars) {
+    x += "<h2>" + myObj.cars[i].judul + "</h2>";
+    for (j in myObj.cars[i].komentar) {
+    	x += myObj.cars[i].komentar[j].isi + "<br>";
+        for (k in myObj.cars[i].komentar[j].tanggapan) {
+        	x += "<span>" + myObj.cars[i].komentar[j].tanggapan[k] + "</span>" + "<br>";
+        }
+    }
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
+
+</body>
+</html>
+

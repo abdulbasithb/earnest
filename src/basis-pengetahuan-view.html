@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-ARNEST | Beranda</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .btn-close {
+            position: absolute;
+            right: 0;
+            top: 7px;
+            padding-right: 15px;
+            color: black;
+        }
+
+        .btn-delete-tanggapan {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-right: 15px;
+            color: black;
+        }
+
+        .btn-close:hover {
+            color: black;
+        }
+
+        hr {
+            margin-top: 0;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        [class^="highlight"] {
+            background: yellow;
+        }
+
+        .peraturan {
+            border: 1px solid #ddd;
+            margin: 40px auto 30px;
+            padding: 50px 5%;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .panel-group {
+            position: absolute;
+            margin-bottom: 0;
+            width: calc(100% - 30px);
+        }
+
+        .panel-collapse {
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .panel-body {
+            padding-bottom: 0;
+        }
+
+        .panel-body .row:not(:first-child) {
+            background-color: #edeef0;
+            padding-top: 15px;
+            /* padding-bottom: 15px; */
+        }
+
+        .panel-body .row:last-child {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First Navbar -->
+    <nav class="first-nav navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">E-ARNEST</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="user-avatar" src="https://scontent-sin6-2.cdninstagram.com/vp/f6ef9601196ca225f087895f092c50d4/5B83593B/t51.2885-19/s150x150/21107528_112835676074940_8265904070003261440_a.jpg"
+                                alt=""> Reza Pahlevi
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Pengaturan</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Keluar</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End First Navbar -->
+
+    <!-- Second Navbar -->
+    <nav class="second-nav navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">
+                                home
+                            </i>
+                            Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">
+                                import_contacts
+                            </i>
+                            Penyusunan Naskah
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="penyusunan-peraturan.html">
+                            <i class="material-icons">
+                                assignment
+                            </i>
+                            Penyusunan Peraturan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="basis-pengetahuan.html">
+                            <i class="material-icons">
+                                folder_open
+                            </i>
+                            Basis Pengetahuan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pencarian.html">
+                            <i class="material-icons">
+                                search
+                            </i>
+                            Pencarian
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Second Navbar -->
+
+    <!-- Main -->
+    <main>
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="peraturan" style="background-color: white;">
+                    <div>
+                        Menimbang :
+                        <br>
+                        <br>
+                        <ol>
+                            <li>bahwa penyesuaian besarnya Penghasilan Tidak Kena Pajak terhitung mulai tanggal 1
+                                Januari 2016
+                                telah ditetapkan dalam 
+                                <a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Dismissible popover" data-content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequunturimi itaque?">
+                                Peraturan Menteri Keuangan Nomor 101/PMK.010/2016 
+                                </a>
+                                tentang
+                                Penyesuaian
+                                Besarnya Penghasilan Tidak Kena Pajak;</li>
+                            <li>bahwa bagian penghasilan sehubungan dengan pekerjaan dari pegawai harian dan mingguan
+                                serta pegawai
+                                tidak tetap lainnya yang tidak dikenakan pemotongan Pajak Penghasilan telah ditetapkan
+                                dalam
+                                Peraturan Menteri Keuangan Nomor 102/PMK.010/2016 tentang Penetapan Bagian Penghasilan
+                                Sehubungan
+                                dengan Pekerjaan dari Pegawai Harian dan Mingguan serta Pegawai Tidak Tetap Lainnya
+                                yang
+                                Tidak Dikenakan Pemotongan Pajak Penghasilan;</li>
+                            <li>berdasarkan pertimbangan sebagaimana dimaksud pada huruf a dan b, serta untuk
+                                melaksanakan ketentuan
+                                Pasal 24 Peraturan Menteri Keuangan Nomor 252/PMK.03/2008 tentang Petunjuk Pelaksanaan
+                                Pemotongan
+                                Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi,
+                                dan
+                                ketentuan Pasal 4 Peraturan Menteri Keuangan Nomor 102/PMK.010/2016 tentang Penetapan
+                                Bagian
+                                Penghasilan Sehubungan dengan Pekerjaan dari Pegawai Harian dan Mingguan serta Pegawai
+                                Tidak
+                                Tetap Lainnya yang Tidak Dikenakan Pemotongan Pajak Penghasilan, perlu menetapkan
+                                Peraturan
+                                Direktur Jenderal Pajak tentang Pedoman Teknis Tata Cara Pemotongan, Penyetoran dan
+                                Pelaporan
+                                Pajak Penghasilan Pasal 21 dan/atau Pajak Penghasilan Pasal 26 Sehubungan Dengan
+                                Pekerjaan,
+                                Jasa, dan Kegiatan Orang Pribadi;</li>
+                        </ol>
+                        <br> Mengingat :
+                        <br>
+                        <br>
+                        <ol>
+                            <li>Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum dan Tata Cara Perpajakan
+                                (Lembaran Negara
+                                Republik Indonesia Tahun 1983 Nomor 49, Tambahan Lembaran Negara Republik Indonesia
+                                Nomor
+                                3262) sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 16
+                                Tahun
+                                2009 (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 62, Tambahan Lembaran Negara
+                                Republik
+                                Indonesia Nomor 4999);
+                            </li>
+                            <li>Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan (Lembaran Negara Republik
+                                Indonesia
+                                Tahun 1983 Nomor 50, Tambahan Lembaran Negara Republik Indonesia Nomor 3263)
+                                sebagaimana
+                                telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 36 Tahun 2008 (Lembaran
+                                Negara
+                                Republik Indonesia Tahun 2008 Nomor 133, Tambahan Lembaran Negara Republik Indonesia
+                                Nomor
+                                4893);
+                            </li>
+                            <li>Peraturan Menteri Keuangan Nomor 250/PMK.03/2008 tentang Besarnya Biaya Jabatan atau
+                                Biaya Pensiun
+                                yang Dapat Dikurangkan dari Penghasilan Bruto Pegawai Tetap atau Pensiunan;</li>
+                            <li>Peraturan Menteri Keuangan Nomor 252/PMK.03/2008 tentang Petunjuk Pelaksanaan
+                                Pemotongan Pajak
+                                atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan Orang Pribadi;</li>
+                            <li>Peraturan Menteri Keuangan Nomor 242/PMK.03/2014 tentang Tata Cara Pembayaran dan
+                                Penyetoran
+                                Pajak;
+                            </li>
+                            <li>Peraturan Menteri Keuangan Nomor 101/PMK.010/2016 tentang Penyesuaian Besarnya
+                                Penghasilan Tidak
+                                Kena Pajak;</li>
+                            <li>Peraturan Menteri Keuangan Nomor 102/PMK.010/2016 tentang Penetapan Bagian Penghasilan
+                                Sehubungan
+                                dengan Pekerjaan dari Pegawai Harian dan Mingguan serta Pegawai Tidak Tetap Lainnya
+                                yang
+                                Tidak Dikenakan Pemotongan Pajak Penghasilan;</li>
+                        </ol>
+                        <br>
+                        <br> MEMUTUSKAN:
+                        <br>
+                        <br> Menetapkan :
+                        <br>
+                        <br> PERATURAN DIREKTUR JENDERAL PAJAK TENTANG PEDOMAN TEKNIS TATA CARA PEMOTONGAN, PENYETORAN
+                        DAN PELAPORAN
+                        PAJAK PENGHASILAN PASAL 21 DAN/ATAU PAJAK PENGHASILAN PASAL 26 SEHUBUNGAN DENGAN PEKERJAAN,
+                        JASA,
+                        DAN KEGIATAN ORANG PRIBADI.
+                        <br>
+                        <br>
+                        <br> BAB I
+                        <br> KETENTUAN UMUM
+                        <br>
+                        <br> Pasal 1
+                        <br>
+                        <br> Dalam Peraturan Direktur Jenderal Pajak ini, yang dimaksud dengan:
+                        <br>
+                        <ol>
+                            <li>Undang-Undang Pajak Penghasilan adalah Undang-Undang Nomor 7 Tahun 1983 tentang Pajak
+                                Penghasilan
+                                sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 36 Tahun
+                                2008.</li>
+                            <li>Pajak Penghasilan sehubungan dengan pekerjaan, jasa, dan kegiatan yang dilakukan oleh
+                                Wajib Pajak
+                                orang pribadi Subjek Pajak dalam negeri, yang selanjutnya disebut PPh Pasal 21, adalah
+                                pajak
+                                atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan pembayaran lain dengan
+                                nama
+                                dan dalam bentuk apapun sehubungan dengan pekerjaan atau jabatan, jasa, dan kegiatan
+                                yang
+                                dilakukan oleh orang pribadi Subjek Pajak dalam negeri, sebagaimana dimaksud dalam
+                                Pasal
+                                21 Undang-Undang Pajak Penghasilan.</li>
+                            <li>Pajak Penghasilan sehubungan dengan pekerjaan, jasa, dan kegiatan yang dilakukan oleh
+                                Wajib Pajak
+                                orang pribadi Subjek Pajak luar negeri, yang selanjutnya disebut PPh Pasal 26, adalah
+                                pajak
+                                atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan pembayaran lain dengan
+                                nama
+                                dan dalam bentuk apapun sehubungan dengan pekerjaan atau jabatan, jasa, dan kegiatan
+                                yang
+                                dilakukan oleh orang pribadi Subjek Pajak luar negeri, sebagaimana dimaksud dalam Pasal
+                                26
+                                Undang-Undang Pajak Penghasilan.
+                            </li>
+                            <li>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 adalah Wajib Pajak orang pribadi atau Wajib
+                                Pajak
+                                badan, termasuk bentuk usaha tetap, yang mempunyai kewajiban untuk melakukan pemotongan
+                                pajak
+                                atas penghasilan sehubungan dengan pekerjaan, jasa, dan kegiatan orang pribadi
+                                sebagaimana
+                                dimaksud dalam Pasal 21 dan Pasal 26 Undang-Undang Pajak Penghasilan.</li>
+                            <li>Badan adalah badan sebagaimana dimaksud dalam Pasal 1 angka 3 Undang-Undang Nomor 6
+                                Tahun 1983
+                                tentang Ketentuan Umum dan Tata Cara Perpajakan sebagaimana telah beberapa kali diubah
+                                terakhir
+                                dengan Undang-Undang Nomor 16 Tahun 2009.</li>
+                            <li>Penyelenggara kegiatan adalah orang pribadi atau badan sebagai penyelenggara kegiatan
+                                yang melakukan
+                                pembayaran imbalan dengan nama dan dalam bentuk apapun kepada orang pribadi sehubungan
+                                dengan
+                                pelaksanaan kegiatan tersebut.
+                            </li>
+                            <li>Penerima penghasilan yang dipotong PPh Pasal 21 adalah orang pribadi dengan status
+                                sebagai Subjek
+                                Pajak dalam negeri yang menerima atau memperoleh penghasilan dengan nama dan dalam
+                                bentuk
+                                apapun, sepanjang tidak dikecualikan dalam Peraturan Direktur Jenderal Pajak ini, dari
+                                Pemotong
+                                PPh Pasal 21 dan/atau PPh Pasal 26 sebagai imbalan sehubungan dengan pekerjaan, jasa
+                                atau
+                                kegiatan, termasuk penerima pensiun.</li>
+                            <li>Penerima penghasilan yang dipotong PPh Pasal 26 adalah orang pribadi dengan status
+                                sebagai Subjek
+                                Pajak luar negeri yang menerima atau memperoleh penghasilan dengan nama dan dalam
+                                bentuk
+                                apapun, sepanjang tidak dikecualikan dalam Peraturan Direktur Jenderal Pajak ini, dari
+                                Pemotong
+                                PPh Pasal 21 dan/atau PPh Pasal 26 sebagai imbalan sehubungan dengan pekerjaan, jasa
+                                atau
+                                kegiatan, termasuk penerima pensiun.</li>
+                            <li>Pegawai adalah orang pribadi yang bekerja pada pemberi kerja, berdasarkan perjanjian
+                                atau kesepakatan
+                                kerja baik secara tertulis maupun tidak tertulis, untuk melaksanakan suatu pekerjaan
+                                dalam
+                                jabatan atau kegiatan tertentu dengan memperoleh imbalan yang dibayarkan berdasarkan
+                                periode
+                                tertentu, penyelesaian pekerjaan, atau ketentuan lain yang ditetapkan pemberi kerja,
+                                termasuk
+                                orang pribadi yang melakukan pekerjaan dalam jabatan negeri.</li>
+                            <li>Pegawai Tetap adalah pegawai yang menerima atau memperoleh penghasilan dalam jumlah
+                                tertentu
+                                secara teratur, termasuk anggota dewan komisaris dan anggota dewan pengawas, serta
+                                pegawai
+                                yang bekerja berdasarkan kontrak untuk suatu jangka waktu tertentu yang menerima atau
+                                memperoleh
+                                penghasilan dalam jumlah tertentu secara teratur.
+                            </li>
+                            <li>Pegawai Tidak Tetap/Tenaga Kerja Lepas adalah pegawai yang hanya menerima penghasilan
+                                apabila
+                                pegawai yang bersangkutan bekerja, berdasarkan jumlah hari bekerja, jumlah unit hasil
+                                pekerjaan
+                                yang dihasilkan atau penyelesaian suatu jenis pekerjaan yang diminta oleh pemberi
+                                kerja.</li>
+                            <li>Penerima penghasilan Bukan Pegawai adalah orang pribadi selain Pegawai Tetap dan
+                                Pegawai Tidak
+                                Tetap/Tenaga Kerja Lepas yang memperoleh penghasilan dengan nama dan dalam bentuk
+                                apapun
+                                dari Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 sebagai imbalan jasa yang dilakukan
+                                berdasarkan
+                                perintah atau permintaan dari pemberi penghasilan.
+                            </li>
+                            <li>Peserta kegiatan adalah orang pribadi yang terlibat dalam suatu kegiatan tertentu,
+                                termasuk mengikuti
+                                rapat, sidang, seminar, lokakarya (workshop), pendidikan, pertunjukan, olahraga, atau
+                                kegiatan
+                                lainnya dan menerima atau memperoleh imbalan sehubungan dengan keikutsertaannya dalam
+                                kegiatan
+                                tersebut.
+                            </li>
+                            <li>Penerima pensiun adalah orang pribadi atau ahli warisnya yang menerima atau memperoleh
+                                imbalan
+                                untuk pekerjaan yang dilakukan di masa lalu, termasuk orang pribadi atau ahli warisnya
+                                yang
+                                menerima tunjangan hari tua atau jaminan hari tua.</li>
+                            <li>Penghasilan Pegawai Tetap yang Bersifat Teratur adalah penghasilan bagi Pegawai Tetap
+                                berupa
+                                gaji atau upah, segala macam tunjangan, dan imbalan dengan nama apapun yang diberikan
+                                secara
+                                periodik berdasarkan ketentuan yang ditetapkan oleh pemberi kerja, termasuk uang
+                                lembur.</li>
+                            <li>Penghasilan Pegawai Tetap yang Bersifat Tidak Teratur adalah penghasilan bagi Pegawai
+                                Tetap selain
+                                penghasilan yang bersifat teratur, yang diterima sekali dalam satu tahun atau periode
+                                lainnya,
+                                antara lain berupa bonus, Tunjangan Hari Raya (THR), jasa produksi, tantiem,
+                                gratifikasi,
+                                atau imbalan sejenis lainnya dengan nama apapun.</li>
+                            <li>Upah harian adalah upah atau imbalan yang diterima atau diperoleh pegawai yang terutang
+                                atau
+                                dibayarkan secara harian.
+                            </li>
+                            <li>Upah mingguan adalah upah atau imbalan yang diterima atau diperoleh pegawai yang
+                                terutang atau
+                                dibayarkan secara mingguan.</li>
+                            <li>Upah satuan adalah upah atau imbalan yang diterima atau diperoleh pegawai yang terutang
+                                atau
+                                dibayarkan berdasarkan jumlah unit hasil pekerjaan yang dihasilkan.</li>
+                            <li>Upah borongan adalah upah atau imbalan yang diterima atau diperoleh pegawai yang
+                                terutang atau
+                                dibayarkan berdasarkan penyelesaian suatu jenis pekerjaan tertentu.</li>
+                            <li>Imbalan kepada Bukan Pegawai adalah penghasilan dengan nama dan dalam bentuk apapun
+                                yang terutang
+                                atau diberikan kepada Bukan Pegawai sehubungan dengan pekerjaan, jasa, atau kegiatan
+                                yang
+                                dilakukan, antara lain berupa honorarium, komisi, fee, dan penghasilan sejenis lainnya.</li>
+                            <li>Imbalan kepada Bukan Pegawai yang Bersifat Berkesinambungan adalah imbalan kepada Bukan
+                                Pegawai
+                                yang dibayar atau terutang lebih dari satu kali dalam satu tahun kalender sehubungan
+                                dengan
+                                pekerjaan, jasa, atau kegiatan.
+                            </li>
+                            <li>Imbalan kepada peserta kegiatan adalah penghasilan dengan nama dan dalam bentuk apapun
+                                yang terutang
+                                atau diberikan kepada peserta kegiatan tertentu, antara lain berupa uang saku, uang
+                                representasi,
+                                uang rapat, honorarium, hadiah atau penghargaan, dan penghasilan sejenis lainnya.</li>
+                            <li>Masa Pajak terakhir adalah masa Desember atau Masa Pajak tertentu di mana Pegawai Tetap
+                                berhenti
+                                bekerja.
+                            </li>
+                        </ol>
+                        <br>
+                        <br> BAB II
+                        <br> PEMOTONG PPh PASAL 21 DAN/ATAU PPh PASAL 26
+                        <br>
+                        <br> Pasal 2
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26, meliputi:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>pemberi kerja yang terdiri dari:
+                                                        <br>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1)</td>
+                                                                    <td>orang pribadi;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2)</td>
+                                                                    <td>badan; atau</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3)</td>
+                                                                    <td>cabang, perwakilan, atau unit, dalam hal yang
+                                                                        melakukan
+                                                                        sebagian atau seluruh administrasi yang terkait
+                                                                        dengan
+                                                                        pembayaran gaji, upah, honorarium, tunjangan,
+                                                                        dan
+                                                                        pembayaran lain adalah cabang, perwakilan, atau
+                                                                        unit
+                                                                        tersebut.
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>bendahara atau pemegang kas pemerintah, termasuk bendahara atau
+                                                        pemegang
+                                                        kas pada Pemerintah Pusat termasuk institusi TNI/POLRI,
+                                                        Pemerintah
+                                                        Daerah, instansi atau lembaga pemerintah, lembaga-lembaga
+                                                        negara
+                                                        lainnya, dan Kedutaan Besar Republik Indonesia di luar negeri,
+                                                        yang
+                                                        membayarkan gaji, upah, honorarium, tunjangan, dan pembayaran
+                                                        lain
+                                                        dengan nama dan dalam bentuk apapun sehubungan dengan pekerjaan
+                                                        atau
+                                                        jabatan, jasa, dan kegiatan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>dana pensiun, badan penyelenggara jaminan sosial tenaga kerja,
+                                                        dan badan-badan
+                                                        lain yang membayar uang pensiun secara berkala dan tunjangan
+                                                        hari
+                                                        tua atau jaminan hari tua;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>orang pribadi yang melakukan kegiatan usaha atau pekerjaan
+                                                        bebas serta
+                                                        badan yang membayar:
+                                                        <br>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td>honorarium, komisi, fee, atau pembayaran lain
+                                                                        sebagai
+                                                                        imbalan sehubungan dengan jasa yang dilakukan
+                                                                        oleh
+                                                                        orang pribadi dengan status Subjek Pajak dalam
+                                                                        negeri,
+                                                                        termasuk jasa tenaga ahli yang melakukan
+                                                                        pekerjaan
+                                                                        bebas dan bertindak untuk dan atas namanya
+                                                                        sendiri,
+                                                                        bukan untuk dan atas nama persekutuannya;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td>honorarium, komisi, fee, atau pembayaran lain
+                                                                        sebagai
+                                                                        imbalan sehubungan dengan jasa yang dilakukan
+                                                                        oleh
+                                                                        orang pribadi dengan status Subjek Pajak luar
+                                                                        negeri;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td>honorarium, komisi, fee, atau imbalan lain
+                                                                        kepada peserta
+                                                                        pendidikan dan pelatihan, serta pegawai magang;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>e.</td>
+                                                    <td>penyelenggara kegiatan, termasuk badan pemerintah, organisasi
+                                                        yang bersifat
+                                                        nasional dan internasional, perkumpulan, orang pribadi serta
+                                                        lembaga
+                                                        lainnya yang menyelenggarakan kegiatan, yang membayar
+                                                        honorarium,
+                                                        hadiah, atau penghargaan dalam bentuk apapun kepada Wajib Pajak
+                                                        orang
+                                                        pribadi berkenaan dengan suatu kegiatan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Tidak termasuk sebagai pemberi kerja yang mempunyai kewajiban untuk melakukan
+                                        pemotongan
+                                        pajak sebagaimana dimaksud pada ayat (1) huruf a atau huruf b adalah:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>kantor perwakilan negara asing;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>organisasi-organisasi internasional sebagaimana dimaksud dalam
+                                                        Peraturan
+                                                        Menteri Keuangan yang mengatur mengenai penetapan
+                                                        organisasi-organisasi
+                                                        internasional yang tidak termasuk subjek Pajak Penghasilan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>organisasi-organisasi internasional yang ketentuan Pajak
+                                                        Penghasilannya
+                                                        didasarkan pada ketentuan perjanjian internasional dan dalam
+                                                        perjanjian
+                                                        internasional tersebut mengecualikan kewajiban pemotongan
+                                                        pajak,
+                                                        serta organisasi-organisasi dimaksud telah ditetapkan oleh
+                                                        Menteri
+                                                        Keuangan;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>pemberi kerja orang pribadi yang tidak melakukan kegiatan usaha
+                                                        atau
+                                                        pekerjaan bebas yang semata-mata mempekerjakan orang pribadi
+                                                        untuk
+                                                        melakukan pekerjaan rumah tangga atau pekerjaan bukan dalam
+                                                        rangka
+                                                        melakukan kegiatan usaha atau pekerjaan bebas.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Dalam hal organisasi internasional tidak memenuhi ketentuan sebagaimana
+                                        dimaksud pada
+                                        ayat (2) huruf b, organisasi internasional dimaksud merupakan pemberi kerja
+                                        yang
+                                        berkewajiban melakukan pemotongan pajak.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB III
+                        <br> PENERIMA PENGHASILAN YANG DIPOTONG PPh PASAL 21
+                        <br> DAN/ATAU PPh PASAL 26
+                        <br>
+                        <br> Pasal 3
+                        <br>
+                        <br> Penerima Penghasilan yang dipotong PPh Pasal 21 dan/atau PPh Pasal 26 adalah orang pribadi
+                        yang
+                        merupakan:
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>a.</td>
+                                    <td>Pegawai;</td>
+                                </tr>
+                                <tr>
+                                    <td>b.</td>
+                                    <td>penerima uang pesangon, pensiun atau uang manfaat pensiun, tunjangan hari tua,
+                                        atau jaminan
+                                        hari tua, termasuk ahli warisnya;</td>
+                                </tr>
+                                <tr>
+                                    <td>c.</td>
+                                    <td>Bukan Pegawai yang menerima atau memperoleh penghasilan sehubungan dengan
+                                        pemberian jasa,
+                                        meliputi:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>tenaga ahli yang melakukan pekerjaan bebas, yang terdiri dari
+                                                        pengacara,
+                                                        akuntan, arsitek, dokter, konsultan, notaris, penilai, dan
+                                                        aktuaris;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>pemain musik, pembawa acara, penyanyi, pelawak, bintang film,
+                                                        bintang
+                                                        sinetron, bintang iklan, sutradara, kru film, foto model,
+                                                        peragawan/peragawati,
+                                                        pemain drama, penari, pemahat, pelukis, dan seniman lainnya;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>olahragawan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td>penasihat, pengajar, pelatih, penceramah, penyuluh, dan
+                                                        moderator;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td>pengarang, peneliti, dan penerjemah;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6.</td>
+                                                    <td>pemberi jasa dalam segala bidang termasuk teknik, komputer dan
+                                                        sistem
+                                                        aplikasinya, telekomunikasi, elektronika, fotografi, ekonomi
+                                                        dan
+                                                        sosial serta pemberi jasa kepada suatu kepanitiaan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7.</td>
+                                                    <td>agen iklan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td>pengawas atau pengelola proyek;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9.</td>
+                                                    <td>pembawa pesanan atau yang menemukan langganan atau yang menjadi
+                                                        perantara;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10.</td>
+                                                    <td>petugas penjaja barang dagangan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11.</td>
+                                                    <td>petugas dinas luar asuransi; dan/atau</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.</td>
+                                                    <td>distributor perusahaan multilevel marketing atau direct selling
+                                                        dan kegiatan
+                                                        sejenis lainnya;
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>d.</td>
+                                    <td>anggota dewan komisaris atau dewan pengawas yang tidak merangkap sebagai
+                                        Pegawai Tetap
+                                        pada perusahaan yang sama</td>
+                                </tr>
+                                <tr>
+                                    <td>e.</td>
+                                    <td>mantan pegawai; dan/atau</td>
+                                </tr>
+                                <tr>
+                                    <td>f.</td>
+                                    <td>peserta kegiatan yang menerima atau memperoleh penghasilan sehubungan dengan
+                                        keikutsertaannya
+                                        dalam suatu kegiatan, antara lain:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>peserta perlombaan dalam segala bidang, antara lain perlombaan
+                                                        olah raga,
+                                                        seni, ketangkasan, ilmu pengetahuan, teknologi dan perlombaan
+                                                        lainnya;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>peserta rapat, konferensi, sidang, pertemuan, atau kunjungan
+                                                        kerja;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>peserta atau anggota dalam suatu kepanitiaan sebagai
+                                                        penyelenggara kegiatan
+                                                        tertentu;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td>peserta pendidikan dan pelatihan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td>peserta kegiatan lainnya.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 4
+                        <br>
+                        <br> Tidak termasuk dalam pengertian penerima penghasilan yang dipotong PPh Pasal 21 dan/atau
+                        PPh Pasal
+                        26, sebagaimana dimaksud dalam Pasal 3 adalah:
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>a.</td>
+                                    <td>pejabat perwakilan diplomatik dan konsulat atau pejabat lain dari negara asing,
+                                        dan orang-orang
+                                        yang diperbantukan kepada mereka yang bekerja pada dan bertempat tinggal
+                                        bersama
+                                        mereka, dengan syarat bukan Warga Negara Indonesia dan di Indonesia tidak
+                                        menerima
+                                        atau memperoleh penghasilan lain di luar jabatan atau pekerjaannya tersebut,
+                                        serta
+                                        negara yang bersangkutan memberikan perlakuan timbal balik;</td>
+                                </tr>
+                                <tr>
+                                    <td>b.</td>
+                                    <td>pejabat perwakilan organisasi internasional sebagaimana dimaksud dalam Pasal 3
+                                        ayat (1)
+                                        huruf c Undang-Undang Pajak Penghasilan, yang telah ditetapkan oleh Menteri
+                                        Keuangan,
+                                        dengan syarat bukan Warga Negara Indonesia dan tidak menjalankan usaha atau
+                                        kegiatan
+                                        atau pekerjaan lain untuk memperoleh penghasilan dari Indonesia.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB IV
+                        <br> PENGHASILAN YANG DIPOTONG PPh PASAL 21 DAN/ATAU PPh PASAL 26
+                        <br>
+                        <br> Pasal 5
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Penghasilan yang dipotong PPh Pasal 21 dan/atau PPh Pasal 26 adalah:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>penghasilan yang diterima atau diperoleh Pegawai Tetap, baik
+                                                        berupa Penghasilan
+                                                        yang Bersifat Teratur maupun Tidak Teratur;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>penghasilan yang diterima atau diperoleh penerima pensiun
+                                                        secara teratur
+                                                        berupa uang pensiun atau penghasilan sejenisnya;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>penghasilan berupa uang pesangon, uang manfaat pensiun,
+                                                        tunjangan hari
+                                                        tua, atau jaminan hari tua yang dibayarkan sekaligus, yang
+                                                        pembayarannya
+                                                        melewati jangka waktu 2 (dua) tahun sejak pegawai berhenti
+                                                        bekerja;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>penghasilan Pegawai Tidak Tetap atau Tenaga Kerja Lepas, berupa
+                                                        upah
+                                                        harian, upah mingguan, upah satuan, upah borongan atau upah
+                                                        yang
+                                                        dibayarkan secara bulanan;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>e.</td>
+                                                    <td>imbalan kepada Bukan Pegawai, antara lain berupa honorarium,
+                                                        komisi,
+                                                        fee, dan imbalan sejenisnya dengan nama dan dalam bentuk apapun
+                                                        sebagai
+                                                        imbalan sehubungan jasa yang dilakukan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>f.</td>
+                                                    <td>imbalan kepada peserta kegiatan, antara lain berupa uang saku,
+                                                        uang representasi,
+                                                        uang rapat, honorarium, hadiah atau penghargaan dengan nama dan
+                                                        dalam
+                                                        bentuk apapun, dan imbalan sejenis dengan nama apapun;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>g.</td>
+                                                    <td>penghasilan berupa honorarium atau imbalan yang bersifat tidak
+                                                        teratur
+                                                        yang diterima atau diperoleh anggota dewan komisaris atau dewan
+                                                        pengawas
+                                                        yang tidak merangkap sebagai Pegawai Tetap pada perusahaan yang
+                                                        sama;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>h.</td>
+                                                    <td>penghasilan berupa jasa produksi, tantiem, gratifikasi, bonus
+                                                        atau imbalan
+                                                        lain yang bersifat tidak teratur yang diterima atau diperoleh
+                                                        mantan
+                                                        pegawai; atau</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>i.</td>
+                                                    <td>penghasilan berupa penarikan dana pensiun oleh peserta program
+                                                        pensiun
+                                                        yang masih berstatus sebagai pegawai, dari dana pensiun yang
+                                                        pendiriannya
+                                                        telah disahkan oleh Menteri Keuangan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Penghasilan yang dipotong PPh Pasal 21 dan/atau PPh Pasal 26 sebagaimana
+                                        dimaksud pada
+                                        ayat (1) termasuk pula penerimaan dalam bentuk natura dan/atau kenikmatan
+                                        lainnya
+                                        dengan nama dan dalam bentuk apapun yang diberikan oleh:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Wajib Pajak yang dikenakan Pajak Penghasilan yang bersifat
+                                                        final; atau</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>Wajib Pajak yang dikenakan Pajak Penghasilan berdasarkan norma
+                                                        penghitungan
+                                                        khusus (deemed profit).</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 6
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Penghasilan sebagaimana dimaksud dalam Pasal 5 yang diterima atau diperoleh
+                                        orang pribadi
+                                        Subjek Pajak dalam negeri merupakan penghasilan yang dipotong PPh Pasal 21.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Penghasilan sebagaimana dimaksud dalam Pasal 5 yang diterima atau diperoleh
+                                        orang pribadi
+                                        Subjek Pajak luar negeri merupakan penghasilan yang dipotong PPh Pasal 26.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 7
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Dalam hal penghasilan sebagaimana dimaksud dalam Pasal 5 ayat (1) diterima atau
+                                        diperoleh
+                                        dalam mata uang asing, penghitungan PPh Pasal 21 dan/atau PPh Pasal 26
+                                        didasarkan
+                                        pada nilai tukar (kurs) yang ditetapkan oleh Menteri Keuangan yang berlaku pada
+                                        saat
+                                        pembayaran penghasilan tersebut atau pada saat dibebankan sebagai biaya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Penghitungan PPh Pasal 21 dan/atau PPh Pasal 26 atas penghasilan berupa
+                                        penerimaan dalam
+                                        bentuk natura dan/atau kenikmatan lainnya sebagaimana dimaksud dalam Pasal 5
+                                        ayat
+                                        (2) didasarkan pada harga pasar atas barang yang diberikan atau nilai wajar
+                                        atas
+                                        pemberian natura dan/atau kenikmatan yang diberikan.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 8
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Tidak termasuk dalam pengertian penghasilan yang dipotong PPh Pasal 21 adalah:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>pembayaran manfaat atau santunan asuransi dari perusahaan
+                                                        asuransi sehubungan
+                                                        dengan asuransi kesehatan, asuransi kecelakaan, asuransi jiwa,
+                                                        asuransi
+                                                        dwiguna, dan asuransi beasiswa;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>penerimaan dalam bentuk natura dan/atau kenikmatan dalam bentuk
+                                                        apapun
+                                                        yang diberikan oleh Wajib Pajak atau Pemerintah, kecuali
+                                                        penghasilan
+                                                        sebagaimana dimaksud dalam Pasal 5 ayat (2);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>iuran pensiun yang dibayarkan kepada dana pensiun yang
+                                                        pendiriannya telah
+                                                        disahkan oleh Menteri Keuangan, iuran tunjangan hari tua atau
+                                                        iuran
+                                                        jaminan hari tua kepada badan penyelenggara tunjangan hari tua
+                                                        atau
+                                                        badan penyelenggara jaminan sosial tenaga kerja yang dibayar
+                                                        oleh
+                                                        pemberi kerja;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>zakat yang diterima oleh orang pribadi yang berhak dari badan
+                                                        atau lembaga
+                                                        amil zakat yang dibentuk atau disahkan oleh Pemerintah, atau
+                                                        sumbangan
+                                                        keagamaan yang sifatnya wajib bagi pemeluk agama yang diakui di
+                                                        Indonesia
+                                                        yang diterima oleh orang pribadi yang berhak dari lembaga
+                                                        keagamaan
+                                                        yang dibentuk atau disahkan oleh Pemerintah, sepanjang tidak
+                                                        ada
+                                                        hubungan dengan usaha, pekerjaan, kepemilikan, atau penguasaan
+                                                        di
+                                                        antara pihak-pihak yang bersangkutan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>e.</td>
+                                                    <td>beasiswa sebagaimana dimaksud dalam Pasal 4 ayat (3) huruf l
+                                                        Undang-Undang
+                                                        Pajak Penghasilan.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Pajak Penghasilan yang ditanggung oleh pemberi kerja, termasuk yang ditanggung
+                                        oleh Pemerintah,
+                                        merupakan penerimaan dalam bentuk kenikmatan sebagaimana dimaksud pada ayat (1)
+                                        huruf
+                                        b.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB V
+                        <br> DASAR PENGENAAN DAN PEMOTONGAN
+                        <br> PPh PASAL 21 DAN/ATAU PPh PASAL 26
+                        <br>
+                        <br> Pasal 9
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Dasar pengenaan dan pemotongan PPh Pasal 21 adalah sebagai berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Penghasilan Kena Pajak, yang berlaku bagi:
+                                                        <br>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td>Pegawai Tetap;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td>penerima pensiun berkala;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td>Pegawai Tidak Tetap yang penghasilannya dibayar
+                                                                        secara
+                                                                        bulanan atau jumlah kumulatif penghasilan yang
+                                                                        diterima
+                                                                        dalam 1 (satu) bulan kalender telah melebihi
+                                                                        Rp4.500.000,00
+                                                                        (empat juta lima ratus ribu rupiah); dan</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4.</td>
+                                                                    <td>Bukan Pegawai sebagaimana dimaksud dalam Pasal
+                                                                        3 huruf
+                                                                        c yang menerima imbalan yang bersifat
+                                                                        berkesinambungan.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>Jumlah penghasilan yang melebihi Rp450.000,00 (empat ratus lima
+                                                        puluh
+                                                        ribu rupiah) sehari, yang berlaku bagi Pegawai Tidak Tetap atau
+                                                        Tenaga
+                                                        Kerja Lepas yang menerima upah harian, upah mingguan, upah
+                                                        satuan
+                                                        atau upah borongan, sepanjang penghasilan kumulatif yang
+                                                        diterima
+                                                        dalam 1 (satu) bulan kalender belum melebihi Rp4.500.000,00
+                                                        (empat
+                                                        juta lima ratus ribu rupiah);
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>50% (lima puluh persen) dari jumlah penghasilan bruto, yang
+                                                        berlaku bagi
+                                                        Bukan Pegawai sebagaimana dimaksud dalam Pasal 3 huruf c yang
+                                                        menerima
+                                                        imbalan yang tidak bersifat berkesinambungan;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>Jumlah penghasilan bruto, yang berlaku bagi penerima
+                                                        penghasilan selain
+                                                        penerima penghasilan sebagaimana dimaksud pada huruf a, b, dan
+                                                        huruf
+                                                        c.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Dasar pengenaan dan pemotongan PPh Pasal 26 adalah jumlah penghasilan bruto.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 10
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Jumlah penghasilan bruto yang diterima atau diperoleh penerima penghasilan yang
+                                        dipotong
+                                        PPh Pasal 21 dan/atau PPh Pasal 26 adalah seluruh jumlah penghasilan
+                                        sebagaimana
+                                        dimaksud dalam Pasal 5 yang diterima atau diperoleh dalam suatu periode atau
+                                        pada
+                                        saat dibayarkan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Penghasilan Kena Pajak sebagaimana dimaksud dalam Pasal 9 ayat (1) huruf a
+                                        adalah sebagai
+                                        berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>bagi Pegawai Tetap dan penerima pensiun berkala, sebesar
+                                                        penghasilan
+                                                        neto dikurangi Penghasilan Tidak Kena Pajak (PTKP);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>bagi Pegawai Tidak Tetap, sebesar penghasilan bruto dikurangi
+                                                        PTKP; dan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>bagi Bukan Pegawai sebagaimana dimaksud dalam Pasal 3 huruf c,
+                                                        sebesar
+                                                        50% (lima puluh persen) dari jumlah penghasilan bruto dikurangi
+                                                        PTKP
+                                                        per bulan.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Besarnya penghasilan neto bagi Pegawai Tetap yang dipotong PPh Pasal 21 adalah
+                                        jumlah
+                                        seluruh penghasilan bruto dikurangi dengan:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.
+                                                        <br>
+                                                    </td>
+                                                    <td>biaya jabatan, sebesar 5% (lima persen) dari penghasilan bruto,
+                                                        setinggi-tingginya
+                                                        Rp 500.000,00 (lima ratus ribu rupiah) sebulan atau
+                                                        Rp6.000.000,00
+                                                        (enam juta rupiah) setahun;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.
+                                                        <br>
+                                                    </td>
+                                                    <td>iuran yang terkait dengan gaji yang dibayar oleh pegawai kepada
+                                                        dana
+                                                        pensiun yang pendiriannya telah disahkan oleh Menteri Keuangan
+                                                        atau
+                                                        badan penyelenggara tunjangan hari tua atau jaminan hari tua
+                                                        yang
+                                                        dipersamakan dengan dana pensiun yang pendiriannya telah
+                                                        disahkan
+                                                        oleh Menteri Keuangan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Besarnya penghasilan neto bagi penerima pensiun berkala yang dipotong PPh Pasal
+                                        21 adalah
+                                        seluruh jumlah penghasilan bruto dikurangi dengan biaya pensiun, sebesar 5%
+                                        (lima
+                                        persen) dari penghasilan bruto, setinggi-tingginya Rp200.000,00 (dua ratus ribu
+                                        rupiah)
+                                        sebulan atau Rp2.400.000,00 (dua juta empat ratus ribu rupiah) setahun.</td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Dalam hal Bukan Pegawai sebagaimana dimaksud dalam Pasal 3 huruf c memberikan
+                                        jasa kepada
+                                        Pemotong PPh Pasal 21 dan/atau PPh Pasal 26:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>mempekerjakan orang lain sebagai pegawainya maka besarnya
+                                                        jumlah penghasilan
+                                                        bruto sebagaimana dimaksud pada ayat (1) adalah sebesar jumlah
+                                                        pembayaran
+                                                        setelah dikurangi dengan bagian gaji atau upah dari pegawai
+                                                        yang
+                                                        dipekerjakan tersebut, kecuali apabila dalam kontrak/perjanjian
+                                                        tidak
+                                                        dapat dipisahkan bagian gaji atau upah dari pegawai yang
+                                                        dipekerjakan
+                                                        tersebut maka besarnya penghasilan bruto tersebut adalah
+                                                        sebesar
+                                                        jumlah yang dibayarkan; atau</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>melakukan penyerahan material atau barang maka besarnya jumlah
+                                                        penghasilan
+                                                        bruto sebagaimana dimaksud pada ayat (1) hanya atas pemberian
+                                                        jasanya
+                                                        saja, kecuali apabila dalam kontrak/perjanjian tidak dapat
+                                                        dipisahkan
+                                                        antara pemberian jasa dengan material atau barang maka besarnya
+                                                        penghasilan
+                                                        bruto tersebut termasuk pemberian jasa dan material atau
+                                                        barang.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(6)</td>
+                                    <td>Dalam hal jumlah penghasilan bruto sebagaimana dimaksud pada ayat (1)
+                                        dibayarkan kepada
+                                        dokter yang melakukan praktik di rumah sakit dan/atau klinik maka besarnya
+                                        jumlah
+                                        penghasilan bruto adalah sebesar jasa dokter yang dibayar oleh pasien melalui
+                                        rumah
+                                        sakit dan/atau klinik sebelum dipotong biaya-biaya atau bagi hasil oleh rumah
+                                        sakit
+                                        dan/atau klinik.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 11
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Besarnya PTKP per tahun adalah sebagai berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Rp54.000.000,00 (lima puluh empat juta rupiah) untuk diri Wajib
+                                                        Pajak
+                                                        orang pribadi;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>Rp4.500.000,00 (empat juta lima ratus ribu rupiah) tambahan
+                                                        untuk Wajib
+                                                        Pajak yang kawin;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>Rp4.500.000,00 (empat juta lima ratus ribu rupiah) tambahan
+                                                        untuk setiap
+                                                        anggota keluarga sedarah dan keluarga semenda dalam garis
+                                                        keturunan
+                                                        lurus serta anak angkat, yang menjadi tanggungan sepenuhnya,
+                                                        paling
+                                                        banyak 3 (tiga) orang untuk setiap keluarga.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>PTKP per bulan sebagaimana dimaksud dalam Pasal 10 ayat (2) huruf c adalah PTKP
+                                        per tahun
+                                        sebagaimana dimaksud pada ayat (1) dibagi 12 (dua belas), sebesar:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Rp4.500.000,00 (empat juta lima ratus ribu rupiah) untuk diri
+                                                        Wajib Pajak
+                                                        orang pribadi;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>Rp375.000,00 (tiga ratus tujuh puluh lima ribu rupiah) tambahan
+                                                        untuk
+                                                        Wajib Pajak yang kawin;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>Rp375.000,00 (tiga ratus tujuh puluh lima ribu rupiah) tambahan
+                                                        untuk
+                                                        setiap anggota keluarga sedarah dan keluarga semenda dalam
+                                                        garis
+                                                        keturunan lurus serta anak angkat, yang menjadi tanggungan
+                                                        sepenuhnya,
+                                                        paling banyak 3 (tiga) orang untuk setiap keluarga.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Besarnya PTKP bagi karyawati berlaku ketentuan sebagai berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>bagi karyawati kawin, sebesar PTKP untuk dirinya sendiri;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>bagi karyawati tidak kawin, sebesar PTKP untuk dirinya sendiri
+                                                        ditambah
+                                                        PTKP untuk keluarga yang menjadi tanggungan sepenuhnya.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Dalam hal karyawati kawin dapat menunjukkan keterangan tertulis dari Pemerintah
+                                        Daerah
+                                        setempat serendah-rendahnya kecamatan yang menyatakan bahwa suaminya tidak
+                                        menerima
+                                        atau memperoleh penghasilan, besarnya PTKP adalah PTKP untuk dirinya sendiri
+                                        ditambah
+                                        PTKP untuk status kawin dan PTKP untuk keluarga yang menjadi tanggungan
+                                        sepenuhnya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Besarnya PTKP ditentukan berdasarkan keadaan pada awal tahun kalender.</td>
+                                </tr>
+                                <tr>
+                                    <td>(6)</td>
+                                    <td>Dikecualikan dari ketentuan sebagaimana dimaksud pada ayat (5), besarnya PTKP
+                                        untuk pegawai
+                                        yang baru datang dan menetap di Indonesia dalam bagian tahun kalender
+                                        ditentukan
+                                        berdasarkan keadaan pada awal bulan dari bagian tahun kalender yang
+                                        bersangkutan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 12
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Atas penghasilan bagi Pegawai Tidak Tetap atau Tenaga Kerja Lepas yang tidak
+                                        dibayar
+                                        secara bulanan atau jumlah kumulatifnya dalam 1 (satu) bulan kalender belum
+                                        melebihi
+                                        Rp4.500.000,00 (empat juta lima ratus ribu rupiah), berlaku ketentuan sebagai
+                                        berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>tidak dilakukan pemotongan PPh Pasal 21, dalam hal penghasilan
+                                                        sehari
+                                                        atau rata-rata penghasilan sehari belum melebihi Rp450.000,00
+                                                        (empat
+                                                        ratus lima puluh ribu rupiah);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>dilakukan pemotongan PPh Pasal 21, dalam hal penghasilan sehari
+                                                        atau
+                                                        rata-rata penghasilan sehari melebihi Rp450.000,00 (empat ratus
+                                                        lima
+                                                        puluh ribu rupiah), dan jumlah sebesar Rp450.000,00 (empat
+                                                        ratus
+                                                        lima puluh ribu rupiah) tersebut merupakan jumlah yang dapat
+                                                        dikurangkan
+                                                        dari penghasilan bruto.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Rata-rata penghasilan sehari sebagaimana dimaksud pada ayat (1) adalah
+                                        rata-rata upah
+                                        mingguan, upah satuan, atau upah borongan untuk setiap hari kerja yang
+                                        digunakan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Dalam hal Pegawai Tidak Tetap telah memperoleh penghasilan kumulatif dalam 1
+                                        (satu) bulan
+                                        kalender melebihi Rp4.500.000,00 (empat juta lima ratus ribu rupiah) maka
+                                        jumlah
+                                        yang dapat dikurangkan dari penghasilan bruto adalah sebesar PTKP yang
+                                        sebenarnya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>PTKP yang sebenarnya sebagaimana dimaksud pada ayat (3) adalah sebesar PTKP
+                                        untuk jumlah
+                                        hari kerja yang sebenarnya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>PTKP sehari sebagai dasar untuk menetapkan PTKP yang sebenarnya adalah sebesar
+                                        PTKP per
+                                        tahun sebagaimana dimaksud dalam Pasal 11 ayat (1) dibagi 360 (tiga ratus enam
+                                        puluh)
+                                        hari.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(6)</td>
+                                    <td>Dalam hal berdasarkan ketentuan di bidang ketenagakerjaan diatur kewajiban
+                                        untuk mengikutsertakan
+                                        Pegawai Tidak Tetap atau Tenaga Kerja Lepas dalam program jaminan hari tua atau
+                                        tunjangan
+                                        hari tua, maka iuran jaminan hari tua atau iuran tunjangan hari tua yang
+                                        dibayar
+                                        sendiri oleh Pegawai Tidak Tetap kepada badan penyelenggara jaminan sosial
+                                        tenaga
+                                        kerja atau badan penyelenggara tunjangan hari tua, dapat dikurangkan dari
+                                        penghasilan
+                                        bruto.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 13
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Penerima penghasilan Bukan Pegawai sebagaimana dimaksud dalam Pasal 9 ayat
+                                        (1)huruf a
+                                        angka 4 dapat memperoleh pengurangan berupa PTKP sepanjang yang bersangkutan
+                                        telah
+                                        mempunyai Nomor Pokok Wajib Pajak dan hanya memperoleh penghasilan dari
+                                        hubungan
+                                        kerja dengan satu Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 serta tidak
+                                        memperoleh
+                                        penghasilan lainnya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Untuk dapat memperoleh pengurangan berupa PTKP sebagaimana dimaksud pada ayat
+                                        (1), penerima
+                                        penghasilan Bukan Pegawai harus menyerahkan fotokopi kartu Nomor Pokok Wajib
+                                        Pajak,
+                                        dan bagi wanita kawin harus menyerahkan fotokopi kartu Nomor Pokok Wajib Pajak
+                                        suami
+                                        serta fotokopi surat nikah dan kartu keluarga.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB VI
+                        <br> TARIF PEMOTONGAN PAJAK DAN PENERAPANNYA
+                        <br>
+                        <br> Pasal 14
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Tarif berdasarkan Pasal 17 ayat (1) huruf a Undang-Undang Pajak Penghasilan
+                                        diterapkan
+                                        atas Penghasilan Kena Pajak dari:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Pegawai Tetap;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>Penerima Pensiun berkala yang dibayarkan secara bulanan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>Pegawai Tidak Tetap atau Tenaga Kerja Lepas yang dibayarkan
+                                                        secara bulanan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Untuk perhitungan PPh Pasal 21 yang harus dipotong setiap Masa Pajak, kecuali
+                                        Masa Pajak
+                                        terakhir, tarif diterapkan atas perkiraan penghasilan yang akan diperoleh
+                                        selama
+                                        1 (satu) tahun, dengan ketentuan sebagai berikut:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>perkiraan atas penghasilan yang bersifat teratur adalah jumlah
+                                                        penghasilan
+                                                        teratur dalam 1 (satu) bulan dikalikan 12 (dua belas);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>dalam hal terdapat tambahan penghasilan yang bersifat tidak
+                                                        teratur maka
+                                                        perkiraan penghasilan yang akan diperoleh selama 1 (satu) tahun
+                                                        adalah
+                                                        sebesar jumlah pada huruf a ditambah dengan jumlah penghasilan
+                                                        yang
+                                                        bersifat tidak teratur.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Jumlah PPh Pasal 21 yang harus dipotong untuk setiap Masa Pajak sebagaimana
+                                        dimaksud
+                                        pada ayat (2) adalah:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>atas penghasilan yang bersifat teratur adalah sebesar Pajak
+                                                        Penghasilan
+                                                        terutang atas jumlah penghasilan sebagaimana dimaksud pada ayat
+                                                        (2)
+                                                        huruf a dibagi 12 (dua belas);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>atas penghasilan yang bersifat tidak teratur adalah sebesar
+                                                        selisih antara
+                                                        Pajak Penghasilan yang terutang atas jumlah penghasilan
+                                                        sebagaimana
+                                                        dimaksud pada ayat (2) huruf b dengan Pajak Penghasilan yang
+                                                        terutang
+                                                        atas jumlah penghasilan sebagaimana dimaksud pada ayat (2)
+                                                        huruf
+                                                        a.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Dalam hal kewajiban pajak subjektif Pegawai Tetap terhitung sejak awal tahun
+                                        kalender
+                                        dan mulai bekerja setelah bulan Januari, termasuk pegawai yang sebelumnya
+                                        bekerja
+                                        pada pemberi kerja lain, banyaknya bulan yang menjadi faktor pengali
+                                        sebagaimana
+                                        dimaksud pada ayat (2) atau faktor pembagi sebagaimana dimaksud pada ayat (3)
+                                        adalah
+                                        jumlah bulan tersisa dalam tahun kalender sejak yang bersangkutan mulai
+                                        bekerja.</td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Besarnya PPh Pasal 21 yang harus dipotong untuk Masa Pajak terakhir adalah
+                                        selisih antara
+                                        Pajak Penghasilan yang terutang atas seluruh penghasilan kena pajak selama 1
+                                        (satu)
+                                        tahun pajak atau bagian tahun pajak dengan PPh Pasal 21 yang telah dipotong
+                                        pada
+                                        masa-masa sebelumnya dalam tahun pajak yang bersangkutan.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(6)</td>
+                                    <td>Dalam hal kewajiban pajak subjektif Pegawai Tetap hanya meliputi bagian tahun
+                                        pajak maka
+                                        perhitungan PPh Pasal 21 yang terutang untuk bagian tahun pajak tersebut
+                                        dihitung
+                                        berdasarkan Penghasilan Kena Pajak yang disetahunkan, sebanding dengan jumlah
+                                        bulan
+                                        dalam bagian tahun pajak yang bersangkutan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(7)</td>
+                                    <td>Dalam hal Pegawai Tetap berhenti bekerja sebelum bulan Desember dan jumlah PPh
+                                        Pasal
+                                        21 yang telah dipotong dalam tahun kalender yang bersangkutan lebih besar dari
+                                        PPh
+                                        Pasal 21 yang terutang untuk 1 (satu) tahun pajak maka kelebihan PPh Pasal 21
+                                        yang
+                                        telah dipotong tersebut dikembalikan kepada Pegawai Tetap yang bersangkutan
+                                        bersamaan
+                                        dengan pemberian bukti pemotongan PPh Pasal 21, paling lambat akhir bulan
+                                        berikutnya
+                                        setelah berhenti bekerja.</td>
+                                </tr>
+                                <tr>
+                                    <td>(8)</td>
+                                    <td>Jumlah Penghasilan Kena Pajak sebagai dasar penerapan tarif Pasal 17 ayat (1)
+                                        huruf a
+                                        Undang-Undang Pajak Penghasilan sebagaimana dimaksud pada ayat (1) dibulatkan
+                                        ke
+                                        bawah hingga ribuan penuh.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 15
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Atas penghasilan yang diterima atau diperoleh Pegawai Tidak Tetap atau Tenaga
+                                        Kerja Lepas
+                                        berupa upah harian, upah mingguan, upah satuan, upah borongan, dan uang saku
+                                        harian,
+                                        sepanjang penghasilan tidak dibayarkan secara bulanan, tarif lapisan pertama
+                                        sebagaimana
+                                        dimaksud dalam Pasal 17 ayat (1) huruf a Undang-Undang Pajak Penghasilan
+                                        diterapkan
+                                        atas:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>jumlah penghasilan bruto sehari yang melebihi Rp450.000,00
+                                                        (empat ratus
+                                                        lima puluh ribu rupiah); atau</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>jumlah penghasilan bruto dikurangi PTKP yang sebenarnya, dalam
+                                                        hal jumlah
+                                                        penghasilan kumulatif dalam 1 (satu) bulan kalender telah
+                                                        melebihi
+                                                        Rp4.500.000,00 (empat juta lima ratus ribu rupiah).</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Dalam hal jumlah penghasilan kumulatif dalam satu bulan kalender telah melebihi
+                                        Rp 10.200.000,00
+                                        (sepuluh juta dua ratus ribu rupiah), PPh Pasal 21 dihitung dengan menerapkan
+                                        tarif
+                                        Pasal 17 ayat (1) huruf a Undang-Undang Pajak Penghasilan atas jumlah
+                                        Penghasilan
+                                        Kena Pajak yang disetahunkan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 16
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Tarif berdasarkan Pasal 17 ayat (1) huruf a Undang-Undang Pajak Penghasilan
+                                        diterapkan
+                                        atas jumlah kumulatif dari:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>Penghasilan Kena Pajak, sebesar 50% (lima puluh persen) dari
+                                                        jumlah penghasilan
+                                                        bruto dikurangi PTKP per bulan, yang diterima atau diperoleh
+                                                        Bukan
+                                                        Pegawai sebagaimana dimaksud dalam Pasal 9 ayat (1) huruf a
+                                                        angka
+                                                        4 yang memenuhi ketentuan sebagaimana dimaksud dalam Pasal 13
+                                                        ayat
+                                                        (1);
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>50% (lima puluh persen) dari jumlah penghasilan bruto untuk
+                                                        setiap pembayaran
+                                                        imbalan kepada Bukan Pegawai sebagaimana dimaksud dalam Pasal 3
+                                                        huruf
+                                                        c yang bersifat berkesinambungan yang tidak memenuhi ketentuan
+                                                        sebagaimana
+                                                        dimaksud dalam Pasal 13 ayat (1);</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c.</td>
+                                                    <td>jumlah penghasilan bruto berupa honorarium atau imbalan yang
+                                                        bersifat
+                                                        tidak teratur yang diterima atau diperoleh anggota dewan
+                                                        komisaris
+                                                        atau dewan pengawas yang tidak merangkap sebagai Pegawai Tetap
+                                                        pada
+                                                        perusahaan yang sama;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.</td>
+                                                    <td>jumlah penghasilan bruto berupa jasa produksi, tantiem,
+                                                        gratifikasi,
+                                                        bonus atau imbalan lain yang bersifat tidak teratur yang
+                                                        diterima
+                                                        atau diperoleh mantan pegawai; atau
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>e.</td>
+                                                    <td>jumlah penghasilan bruto berupa penarikan dana pensiun oleh
+                                                        peserta program
+                                                        pensiun yang masih berstatus sebagai pegawai, dari dana pensiun
+                                                        yang
+                                                        pendiriannya telah disahkan oleh Menteri Keuangan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Tarif berdasarkan Pasal 17 ayat (1) huruf a Undang-Undang Pajak Penghasilan
+                                        diterapkan
+                                        atas:
+                                        <br>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a.</td>
+                                                    <td>50% (lima puluh persen) dari jumlah penghasilan bruto untuk
+                                                        setiap pembayaran
+                                                        imbalan kepada Bukan Pegawai yang tidak bersifat
+                                                        berkesinambungan;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b.</td>
+                                                    <td>jumlah penghasilan bruto untuk setiap kali pembayaran yang
+                                                        bersifat utuh
+                                                        dan tidak dipecah, yang diterima oleh peserta kegiatan.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 17
+                        <br>
+                        <br> Pengenaan PPh Pasal 21 bagi pejabat negara, pegawai negeri sipil, anggota Tentara Nasional
+                        Indonesia,
+                        anggota Kepolisian Negara Republik Indonesia, serta para pensiunannya atas penghasilan yang
+                        menjadi
+                        beban Anggaran Pendapatan dan Belanja Negara atau Anggaran Pendapatan dan Belanja Daerah,
+                        diatur
+                        berdasarkan ketentuan yang ditetapkan khusus mengenai hal dimaksud.
+                        <br>
+                        <br>
+                        <br> Pasal 18
+                        <br>
+                        <br> Pengenaan PPh Pasal 21 bagi pegawai atas uang pesangon, uang manfaat pensiun, tunjangan
+                        hari tua,
+                        atau jaminan hari tua yang dibayarkan secara sekaligus, diatur berdasarkan ketentuan yang
+                        ditetapkan
+                        khusus mengenai hal dimaksud.
+                        <br>
+                        <br>
+                        <br> Pasal 19
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Tarif PPh Pasal 26 sebesar 20% (dua puluh persen) dan bersifat final diterapkan
+                                        atas
+                                        penghasilan bruto yang diterima atau diperoleh sebagai imbalan atas pekerjaan,
+                                        jasa,
+                                        dan kegiatan yang dilakukan oleh orang pribadi dengan status Subjek Pajak luar
+                                        negeri
+                                        dengan memperhatikan ketentuan Persetujuan Penghindaran Pajak Berganda yang
+                                        berlaku
+                                        antara Republik Indonesia dengan negara domisili Subjek Pajak luar negeri
+                                        tersebut.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>PPh Pasal 26 sebagaimana dimaksud pada ayat (1) tidak bersifat final dalam hal
+                                        orang
+                                        pribadi sebagai Wajib Pajak luar negeri tersebut berubah status menjadi Wajib
+                                        Pajak
+                                        dalam negeri.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB VII
+                        <br> TARIF PEMOTONGAN PPh PASAL 21 BAGI PENERIMA PENGHASILAN YANG TIDAK
+                        <br> MEMPUNYAI NOMOR POKOK WAJIB PAJAK
+                        <br>
+                        <br> Pasal 20
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Bagi penerima penghasilan yang dipotong PPh Pasal 21 yang tidak memiliki Nomor
+                                        Pokok
+                                        Wajib Pajak, dikenakan pemotongan PPh Pasal 21 dengan tarif lebih tinggi 20%
+                                        (dua
+                                        puluh persen) daripada tarif yang diterapkan terhadap Wajib Pajak yang memiliki
+                                        Nomor
+                                        Pokok Wajib Pajak.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Jumlah PPh Pasal 21 yang harus dipotong sebagaimana dimaksud pada ayat (1)
+                                        adalah sebesar
+                                        120% (seratus dua puluh persen) dari jumlah PPh Pasal 21 yang seharusnya
+                                        dipotong
+                                        dalam hal yang bersangkutan memiliki Nomor Pokok Wajib Pajak.</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Pemotongan PPh Pasal 21 sebagaimana dimaksud pada ayat (1) hanya berlaku untuk
+                                        pemotongan
+                                        PPh Pasal 21 yang bersifat tidak final.</td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Dalam hal Pegawai Tetap atau penerima pensiun berkala sebagai penerima
+                                        penghasilan yang
+                                        telah dipotong PPh Pasal 21 dengan tarif yang lebih tinggi sebagaimana dimaksud
+                                        pada
+                                        ayat (1) mendaftarkan diri untuk memperoleh Nomor Pokok Wajib Pajak dalam tahun
+                                        kalender
+                                        yang bersangkutan paling lama sebelum pemotongan PPh Pasal 21 untuk Masa Pajak
+                                        Desember,
+                                        PPh Pasal 21 yang telah dipotong atas selisih pengenaan tarif sebesar 20% (dua
+                                        puluh
+                                        persen) lebih tinggi tersebut diperhitungkan dengan PPh Pasal 21 yang terutang
+                                        untuk
+                                        bulan-bulan selanjutnya setelah memiliki Nomor Pokok Wajib Pajak.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB VIII
+                        <br> SAAT TERUTANG PPh PASAL 21 DAN/ATAU PPh PASAL 26
+                        <br>
+                        <br> Pasal 21
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>PPh Pasal 21 dan/atau PPh Pasal 26 terutang bagi Penerima Penghasilan pada saat
+                                        dilakukan
+                                        pembayaran atau pada saat terutangnya penghasilan yang bersangkutan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>PPh Pasal 21 dan/atau PPh Pasal 26 terutang bagi Pemotong PPh Pasal 21 dan/atau
+                                        PPh Pasal
+                                        26 untuk setiap Masa Pajak.</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Saat terutang untuk setiap Masa Pajak sebagaimana dimaksud pada ayat (2) adalah
+                                        pada
+                                        akhir bulan dilakukannya pembayaran atau pada akhir bulan terutangnya
+                                        penghasilan
+                                        yang bersangkutan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB IX
+                        <br> HAK DAN KEWAJIBAN PEMOTONG PPh PASAL 21 DAN/ATAU PASAL 26
+                        <br> SERTA PENERIMA PENGHASILAN YANG DIPOTONG PAJAK
+                        <br>
+                        <br> Pasal 22
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 dan penerima penghasilan yang
+                                        dipotong PPh
+                                        Pasal 21 wajib mendaftarkan diri ke Kantor Pelayanan Pajak sesuai dengan
+                                        ketentuan
+                                        peraturan perundang-undangan perpajakan.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Pegawai, penerima pensiun berkala, serta Bukan Pegawai sebagaimana dimaksud
+                                        dalam Pasal
+                                        9 ayat (1) huruf a angka 4 wajib membuat surat pernyataan yang berisi jumlah
+                                        tanggungan
+                                        keluarga pada awal tahun kalender atau pada saat mulai menjadi Subjek Pajak
+                                        dalam
+                                        negeri sebagai dasar penentuan PTKP dan wajib menyerahkannya kepada pemotong
+                                        PPh
+                                        Pasal 21 dan/atau PPh Pasal 26 pada saat mulai bekerja atau mulai pensiun.</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Dalam hal terjadi perubahan tanggungan keluarga, maka pegawai, penerima pensiun
+                                        berkala,
+                                        dan Bukan Pegawai sebagaimana dimaksud dalam Pasal 9 ayat (1)huruf a angka 4
+                                        wajib
+                                        membuat surat pernyataan baru dan menyerahkannya kepada Pemotong PPh Pasal 21
+                                        dan/atau
+                                        PPh Pasal 26 paling lama sebelum mulai tahun kalender berikutnya.</td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 wajib menghitung, memotong,
+                                        menyetorkan,
+                                        dan melaporkan PPh Pasal 21 dan/atau PPh Pasal 26 yang terutang untuk setiap
+                                        bulan
+                                        kalender.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 wajib membuat catatan atau kertas
+                                        kerja perhitungan
+                                        PPh Pasal 21 dan/atau PPh Pasal 26 untuk masing-masing penerima penghasilan,
+                                        yang
+                                        menjadi dasar pelaporan PPh Pasal 21 dan/atau PPh Pasal 26 yang terutang untuk
+                                        setiap
+                                        Masa Pajak dan wajib menyimpan catatan atau kertas kerja perhitungan tersebut
+                                        sesuai
+                                        dengan ketentuan peraturan perundang-undangan perpajakan.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(6)</td>
+                                    <td>Ketentuan mengenai kewajiban untuk melaporkan pemotongan PPh Pasal 21 dan/atau
+                                        PPh Pasal
+                                        26 untuk setiap bulan kalender sebagaimana dimaksud pada ayat (4) tetap
+                                        berlaku,
+                                        dalam hal jumlah pajak yang dipotong pada bulan yang bersangkutan nihil.</td>
+                                </tr>
+                                <tr>
+                                    <td>(7)</td>
+                                    <td>Dalam hal dalam suatu bulan terjadi kelebihan penyetoran pajak atas PPh Pasal
+                                        21 dan/atau
+                                        PPh Pasal 26 yang terutang oleh pemotong PPh Pasal 21 dan/atau PPh Pasal 26,
+                                        kelebihan
+                                        penyetoran tersebut dapat diperhitungkan dengan PPh Pasal 21 dan/atau PPh Pasal
+                                        26
+                                        yang terutang pada bulan berikutnya melalui Surat Pemberitahuan Masa PPh Pasal
+                                        21
+                                        dan/atau PPh Pasal 26.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 23
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 harus memberikan bukti pemotongan
+                                        PPh Pasal
+                                        21 atas penghasilan yang diterima atau diperoleh Pegawai Tetap atau penerima
+                                        pensiun
+                                        berkala paling lama 1 (satu) bulan setelah tahun kalender berakhir.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Dalam hal Pegawai Tetap berhenti bekerja sebelum bulan Desember, bukti
+                                        pemotongan PPh
+                                        Pasal 21 sebagaimana dimaksud pada ayat (1) harus diberikan paling lama 1
+                                        (satu)
+                                        bulan setelah yang bersangkutan berhenti bekerja.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 harus memberikan bukti pemotongan
+                                        PPh Pasal
+                                        21 atas pemotongan PPh Pasal 21 selain Pegawai Tetap dan penerima pensiun
+                                        berkala
+                                        sebagaimana dimaksud pada ayat (1), serta bukti pemotongan PPh Pasal 26 setiap
+                                        kali
+                                        melakukan pemotongan PPh Pasal 26.</td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Dalam hal dalam 1 (satu) bulan kalender, kepada satu penerima penghasilan
+                                        dilakukan lebih
+                                        dari 1 (satu) kali pembayaran penghasilan, bukti pemotongan PPh Pasal 21
+                                        dan/atau
+                                        PPh Pasal 26 sebagaimana dimaksud pada ayat (3) dapat dibuat sekali untuk 1
+                                        (satu)
+                                        bulan kalender.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Bentuk formulir pemotongan PPh Pasal 21 dan/atau PPh Pasal 26 ditetapkan dengan
+                                        Peraturan
+                                        Direktur Jenderal Pajak tersendiri.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 24
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>PPh Pasal 21 dan/atau PPh Pasal 26 yang dipotong oleh Pemotong PPh Pasal 21
+                                        dan/atau
+                                        PPh Pasal 26 untuk setiap Masa Pajak wajib disetor ke kantor pos atau bank yang
+                                        ditunjuk
+                                        oleh Menteri Keuangan, paling lama 10 (sepuluh) hari setelah Masa Pajak
+                                        berakhir.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 wajib melaporkan pemotongan dan
+                                        penyetoran
+                                        PPh Pasal 21 dan/atau PPh Pasal 26 untuk setiap Masa Pajak yang dilakukan
+                                        melalui
+                                        penyampaian Surat Pemberitahuan Masa PPh Pasal 21 dan/atau PPh Pasal 26 ke
+                                        Kantor
+                                        Pelayanan Pajak tempat Pemotong PPh Pasal 21 dan/atau PPh Pasal 26 terdaftar,
+                                        paling
+                                        lama 20 (dua puluh) hari setelah Masa Pajak berakhir.</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Dalam hal tanggal jatuh tempo penyetoran PPh Pasal 21 dan/atau PPh Pasal 26
+                                        sebagaimana
+                                        dimaksud pada ayat (1) dan batas waktu pelaporan PPh Pasal 21 dan/atau PPh
+                                        Pasal
+                                        26 sebagaimana dimaksud pada ayat (2) bertepatan dengan hari libur termasuk
+                                        hari
+                                        Sabtu atau hari libur nasional, penyetoran dan pelaporan PPh Pasal 21 dan/atau
+                                        PPh
+                                        Pasal 26 dapat dilakukan pada hari kerja berikutnya.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 25
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>(1)</td>
+                                    <td>Jumlah PPh Pasal 21 yang dipotong merupakan kredit pajak bagi penerima
+                                        penghasilan yang
+                                        dikenakan pemotongan untuk tahun pajak yang bersangkutan, kecuali PPh Pasal 21
+                                        yang
+                                        bersifat final.</td>
+                                </tr>
+                                <tr>
+                                    <td>(2)</td>
+                                    <td>Jumlah pemotongan PPh Pasal 21 atas selisih penerapan tarif sebesar 20% (dua
+                                        puluh persen)
+                                        lebih tinggi bagi Pegawai Tetap atau penerima pensiun berkala sebelum memiliki
+                                        Nomor
+                                        Pokok Wajib Pajak yang telah diperhitungkan dengan PPh Pasal 21 terutang untuk
+                                        bulan-bulan
+                                        selanjutnya pada tahun kalender berikutnya sebagaimana dimaksud dalam Pasal 20
+                                        ayat
+                                        (4) tidak termasuk kredit pajak sebagaimana dimaksud pada ayat (1).</td>
+                                </tr>
+                                <tr>
+                                    <td>(3)</td>
+                                    <td>Dalam hal Wajib Pajak yang telah dipotong PPh Pasal 21 dengan tarif yang lebih
+                                        tinggi
+                                        sebagaimana dimaksud dalam Pasal 20 ayat (1) mendaftarkan diri untuk memperoleh
+                                        Nomor
+                                        Pokok Wajib Pajak maka PPh Pasal 21 yang telah dipotong tersebut dapat
+                                        dikreditkan
+                                        dalam Surat Pemberitahuan Tahunan Pajak Penghasilan Wajib Pajak Orang Pribadi
+                                        untuk
+                                        tahun pajak yang bersangkutan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(4)</td>
+                                    <td>Dalam hal Wajib Pajak sebagaimana dimaksud pada ayat (3) menyampaikan Surat
+                                        Pemberitahuan
+                                        Tahunan Pajak Penghasilan yang menyatakan jumlah lebih bayar maka
+                                        penyampaiannya
+                                        harus dilakukan dalam jangka waktu paling lama 3 (tiga) tahun sejak berakhirnya
+                                        tahun
+                                        pajak yang bersangkutan.</td>
+                                </tr>
+                                <tr>
+                                    <td>(5)</td>
+                                    <td>Dalam hal Surat Pemberitahuan Tahunan Pajak Penghasilan yang menyatakan jumlah
+                                        lebih
+                                        bayar sebagaimana dimaksud pada ayat (4) disampaikan setelah 3 (tiga) tahun
+                                        sesudah
+                                        berakhirnya tahun pajak yang bersangkutan dan Wajib Pajak telah ditegur secara
+                                        tertulis,
+                                        tidak dianggap sebagai Surat Pemberitahuan Tahunan Pajak Penghasilan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> Pasal 26
+                        <br>
+                        <br> Petunjuk umum dan contoh penghitungan pemotongan PPh Pasal 21 dan/atau PPh Pasal 26 adalah
+                        sebagaimana
+                        tercantum dalam Lampiran yang merupakan bagian tidak terpisahkan dari Peraturan Direktur
+                        Jenderal
+                        Pajak ini.
+                        <br>
+                        <br>
+                        <br> BAB X
+                        <br> KETENTUAN PERALIHAN
+                        <br>
+                        <br> Pasal 27
+                        <br>
+                        <br> Dengan berlakunya Peraturan Menteri Keuangan Nomor 101/PMK.010/2016 tentang Penyesuaian
+                        Besarnya
+                        Penghasilan Tidak Kena Pajak, maka penghitungan PPh Pasal 21 untuk Tahun Pajak 2016 berlaku
+                        ketentuan
+                        sebagai berikut:
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>a.</td>
+                                    <td>penghitungan dan penyetoran PPh Pasal 21 serta pelaporan Surat Pemberitahuan
+                                        Masa PPh
+                                        Pasal 21 untuk Tahun Pajak 2016 dihitung dengan menggunakan Penghasilan Tidak
+                                        Kena
+                                        Pajak berdasarkan ketentuan Peraturan Menteri Keuangan Nomor 101/PMK.010/2016;</td>
+                                </tr>
+                                <tr>
+                                    <td>b.</td>
+                                    <td>PPh Pasal 21 untuk Masa Pajak Januari sampai dengan Juni yang telah dihitung,
+                                        disetor,
+                                        dan dilaporkan dengan menggunakan Penghasilan Tidak Kena Pajak berdasarkan
+                                        ketentuan
+                                        Peraturan Menteri Keuangan Nomor 122/PMK.010/2015 dilakukan pembetulan Surat
+                                        Pemberitahuan
+                                        Masa PPh Pasal 21, dan dalam hal terdapat kelebihan setor, maka dapat
+                                        dikompensasikan
+                                        mulai Masa Pajak Juli 2016; dan</td>
+                                </tr>
+                                <tr>
+                                    <td>c.</td>
+                                    <td>penghitungan PPh Pasal 21 terutang pada pembetulan Surat Pemberitahuan Masa PPh
+                                        Pasal
+                                        21 Masa Pajak Januari sampai dengan Juni 2016 sebagaimana dimaksud pada huruf b
+                                        dilakukan
+                                        berdasarkan Peraturan Direktur Jenderal Pajak ini.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br> BAB X
+                        <br> KETENTUAN PENUTUP
+                        <br>
+                        <br> Pasal 28
+                        <br>
+                        <br> Pada saat Peraturan Direktur Jenderal Pajak ini berlaku, Peraturan Direktur Jenderal Pajak
+                        Nomor
+                        PER-32/PJ/2015 tentang Pedoman Teknis Tata Cara Pemotongan, Penyetoran dan Pelaporan Pajak
+                        Penghasilan
+                        Pasal 21 dan/atau Pajak Penghasilan Pasal 26 Sehubungan dengan Pekerjaan, Jasa, dan Kegiatan
+                        Orang
+                        Pribadi dicabut dan dinyatakan tidak berlaku.
+                        <br>
+                        <br>
+                        <br> Pasal 29
+                        <br>
+                        <br> Peraturan Direktur Jenderal Pajak ini mulai berlaku pada tanggal ditetapkan.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br> Ditetapkan di Jakarta
+                        <br> Pada tanggal 29 September 2016
+                        <br> DIREKTUR JENDERAL PAJAK,
+                        <br>
+                        <br> ttd
+                        <br>
+                        <br> KEN DWIJUGIASTEADI
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <p class="text-muted">© 2018.
+                <a href="#">E-ARNEST</a> by
+                <a href="#" target="_blank">Developers</a>
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Script -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="/js/tether.min.js"></script> -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
 body {
-  background: #F5F7FA; }
+  background: #F5F7FA;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 60px; }
 
 nav.navbar {
   border-radius: 0; }
@@ -66,7 +79,10 @@ nav.second-nav {
     padding-left: 0; }
 
 footer.footer {
+  position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 60px;
   background-color: #f5f5f5; }
@@ -211,3 +227,29 @@ footer.footer {
   height: 50px;
   width: 50px;
   border: none; }
+
+.close-btn {
+  background: none;
+  border: none; }
+
+.close-btn {
+  background: none;
+  border: none;
+  padding-left: 3px;
+  padding-right: 3px; }
+  .close-btn:hover {
+    background: #ff0000; }
+    .close-btn:hover i.material-icons {
+      color: #ffffff; }
+  .close-btn i.material-icons {
+    color: #ff0000; }
+
+.add-btn {
+  border: none;
+  background: #ffffff; }
+  .add-btn i.material-icons {
+    color: green; }
+  .add-btn:hover {
+    background: green; }
+    .add-btn:hover i.material-icons {
+      color: white; }

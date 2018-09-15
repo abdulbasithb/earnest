@@ -24,7 +24,8 @@ gulp.task('fonts', function() {
 gulp.task('sass', function () {
     return gulp.src([
             './src/scss/main.scss',
-            './src/scss/style.scss'
+            './src/scss/style.scss',
+            './src/scss/tree.scss'
         ])
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./src/css'))
